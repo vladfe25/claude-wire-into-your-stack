@@ -1,6 +1,6 @@
 ---
 name: express-route
-description: Use when adding or changing an API endpoint or resource in this Express project (a new route file, a new GET/POST/PUT/DELETE handler, or its tests). Encodes how routes, store helpers, validation, error responses and tests are written here. Not for general questions or non-route code.
+description: MUST be used before implementing, planning or explaining any new or changed API endpoint, route handler or resource in this Express project (for example "add a DELETE /users/:id endpoint", "add a new GET/POST/PUT route", "create a /orders resource", or writing route tests). Holds this project's required conventions for route files, db/store.js helpers, 400/404 validation, the {"error": "message"} format and supertest tests. Not for unrelated questions.
 ---
 
 # Writing routes in this project

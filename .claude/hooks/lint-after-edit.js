@@ -13,7 +13,7 @@ process.stdin.on('end', () => {
   }
   if (!file || !file.endsWith('.js')) process.exit(0);
 
-  const res = spawnSync(process.execPath, ['node_modules/eslint/bin/eslint.js', '--fix', file], {
+  const res = spawnSync(process.execPath, ['node_modules/eslint/bin/eslint.js', '--fix', '--', file], {
     encoding: 'utf8',
   });
   if (res.status !== 0) {
